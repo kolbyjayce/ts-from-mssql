@@ -1,0 +1,45 @@
+{
+  "name": "ts-from-mssql",
+  "version": "1.0.1",
+  "description": "Generate TypeScript interfaces from MSSQL tables.",
+  "main": "dist/index.js",
+  "bin": {
+    "ts-from-mssql": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mssql",
+    "typescript",
+    "database",
+    "interfaces",
+    "codegen"
+  ],
+  "author": "Kolby Christiansen <kolbyjayce1@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolbyjayce/ts-from-mssql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolbyjayce/ts-from-mssql/issues"
+  },
+  "homepage": "https://github.com/kolbyjayce/ts-from-mssql#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "mssql": "^10.0.2"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
